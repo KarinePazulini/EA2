@@ -3,7 +3,7 @@
 using namespace std;
 
 void func(int *ponteiro, int n, int &max, int &min){
- for(int k=0; k < n; k++){
+ for(int k = 0; k < n; k++){
    cout << *ponteiro << " ";
    if(min > *ponteiro){
      min = *ponteiro;
@@ -14,17 +14,18 @@ void func(int *ponteiro, int n, int &max, int &min){
      ponteiro++;
  }
  cout << endl;
- cout << "Max = " << max << "," << " Min =" << min << endl;
+ cout << "Max = " << max << "," << " Min = " << min << endl;
 }
 
 int main() {
+  //Primeiro termo a ser inserido será a quantidade de elementos e na sequência os elementos
+  printf("\nInforme a quantidade de elementos do vetor e depois informe os elementos: \n\n");
   int n;
-
-  cout << "Informe a quantidade de elementos do vetor e clique no Enter, depois informe os elementos: \n";
   cin >> n;
 
   int vetor[n-1];
-  int min; int max;
+  int min; 
+  int max;
 
   for(int k=0; k < n; k++){
     cin >> vetor[k];
