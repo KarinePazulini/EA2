@@ -14,13 +14,15 @@ void func(int *ponteiro, int n, int &max, int &min){
      ponteiro++;
  }
  cout << endl;
- cout << "Maior valor: " << max << endl;
- cout << "Menor valor: " << min << endl;
+ cout << "Max = " << max << "," << " Min =" << min << endl;
 }
 
 int main() {
   int n;
+
+  cout << "Informe a quantidade de elementos do vetor e clique no Enter, depois informe os elementos: \n";
   cin >> n;
+
   int vetor[n-1];
   int min; int max;
 
