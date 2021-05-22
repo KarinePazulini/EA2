@@ -13,7 +13,11 @@ void func(int *ponteiro, int n, int &max, int &min){
    }
      ponteiro++;
  }
+ cout << endl;
+ cout << "Maior valor: " << max << endl;
+ cout << "Menor valor: " << min << endl;
 }
+
 int main() {
   int n;
   cin >> n;
