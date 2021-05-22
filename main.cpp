@@ -18,16 +18,14 @@ void func(int *ponteiro, int n, int &max, int &min){
 }
 
 int main() {
-  //Primeiro termo a ser inserido será a quantidade de elementos e na sequência os elementos
   printf("\nInforme a quantidade de elementos do vetor e depois informe os elementos: \n\n");
+
   int n;
   cin >> n;
-
   int vetor[n-1];
-  int min; 
-  int max;
+  int max; int min; 
 
-  for(int k=0; k < n; k++){
+  for(int k = 0; k < n; k++){
     cin >> vetor[k];
   }
   
